@@ -49,6 +49,7 @@
     opacity: .8;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 nav#main-nav ul {
@@ -56,11 +57,11 @@ nav#main-nav ul {
     height: auto;
     line-height: 2.5em;
 }
-nav.nav-center ul li {
+#desktop-nav li {
     display: inline;
     float: none;
 }
-nav.nav-center ul li a {
+#desktop-nav li a {
     display: inline-block;
 }
 
@@ -73,10 +74,35 @@ nav#main-nav .brand-logo{
     margin: 0;
 }
 .brand-logo img{
-    height: 34px;
-    width: 84px;
+    height: 60px;
+    width: 151px;
 }
 
-#splash-vid{
-    object-fit: contain;
+#splash-vid video{
+    max-width: 100%;
+}
+div.hero{
+    position: relative;
+}
+div.slogan{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+div.slogan h1{
+    text-align: center;
+    width: 65%;
+    color: #fff;
+    font-size: 7vw;
+    font-weight: 800;
+}
+
+#mobile-nav{
+    display: hidden;
 }

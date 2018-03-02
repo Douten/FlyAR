@@ -1,9 +1,31 @@
 {% include header.html %}
- 
+
 <nav id="main-nav" class="nav-center black">
   <div class="nav-wrapper">
+    <i class="material-icons show-on-small hide-on-med-and-up">menu</i><a href="#" class="brand-logo"><img src="{{ "/assets/img/logo-white.png" | relative_url }}"></a>
+    <ul id="desktop-nav" class="center hide-on-small-and-down">
+      <li><a href="sass.html">Headset</a></li>
+      <li><a href="badges.html">Experience</a></li>
+      <li><a href="collapsible.html">Locations</a></li>
+      <li><a href="collapsible.html">Gallery</a></li>
+      <li><a href="collapsible.html">About</a></li>
+    </ul>
+
+    <ul id="mobile-nav" class="center show-on-med-and-down">
+      <li><a href="sass.html">Headset</a></li>
+      <li><a href="badges.html">Experience</a></li>
+      <li><a href="collapsible.html">Locations</a></li>
+      <li><a href="collapsible.html">Gallery</a></li>
+      <li><a href="collapsible.html">About</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- <nav id="main-nav" class="nav-center black">
+  <div class="nav-wrapper">
     <a href="#" class="brand-logo"><img src="{{ "/assets/img/logo-white.png" | relative_url }}"></a>
-    <ul id="nav-mobile" class="center hide-on-med-and-down">
+    <ul id="nav-mobile" class="center hide-on-small-and-down">
       <li><a href="sass.html">Headset</a></li>
       <li><a href="badges.html">Experience</a></li>
       <li><a href="collapsible.html">Locations</a></li>
@@ -11,7 +33,7 @@
       <li><a href="collapsible.html">About</a></li>
     </ul>
   </div>
-</nav>
+</nav> -->
  
 <div>
      {{ content }} 
