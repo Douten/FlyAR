@@ -1,26 +1,51 @@
 {% include header.html %}
 
-<nav id="main-nav" class="nav-center black">
-  <div class="nav-wrapper">
-    <i class="material-icons show-on-small hide-on-med-and-up">menu</i><a href="#" class="brand-logo"><img src="{{ "/assets/img/logo-white.png" | relative_url }}"></a>
-    <ul id="desktop-nav" class="center hide-on-small-and-down">
-      <li><a href="sass.html">Headset</a></li>
-      <li><a href="badges.html">Experience</a></li>
-      <li><a href="collapsible.html">Locations</a></li>
-      <li><a href="collapsible.html">Gallery</a></li>
-      <li><a href="collapsible.html">About</a></li>
-    </ul>
 
-    <ul id="mobile-nav" class="center show-on-med-and-down">
-      <li><a href="sass.html">Headset</a></li>
-      <li><a href="badges.html">Experience</a></li>
-      <li><a href="collapsible.html">Locations</a></li>
-      <li><a href="collapsible.html">Gallery</a></li>
-      <li><a href="collapsible.html">About</a></li>
-    </ul>
-
+<nav class="navbar is-dark is-fixed-top" id="main-nav" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="{{ "/assets/img/logo-white.png" | relative_url }}" alt="FlyAR - Experience your city on a new level">
+      </a>
+      <div class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-menu is-active">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Headset
+        </a>
+        <a class="navbar-item">
+          Experience
+        </a>
+        <a class="navbar-item">
+          Locations
+        </a>
+        <a class="navbar-item">
+          About
+        </a>
+      </div>
+    </div>
   </div>
 </nav>
+
+
+<!-- <nav id="main-nav" class="nav-center black">
+  <div class="nav-wrapper">
+    <i class="material-icons">menu</i>
+    <a href="#" class="brand-logo"><img src="{{ "/assets/img/logo-white.png" | relative_url }}"></a>
+    <ul class="center">
+      <li><a href="sass.html">Headset</a></li>
+      <li><a href="badges.html">Experience</a></li>
+      <li><a href="collapsible.html">Locations</a></li>
+      <li><a href="collapsible.html">Gallery</a></li>
+      <li><a href="collapsible.html">About</a></li>
+    </ul>
+  </div>
+</nav> -->
 
 <!-- <nav id="main-nav" class="nav-center black">
   <div class="nav-wrapper">
@@ -41,24 +66,7 @@
  
 <footer class="page-footer">
   <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text"> {{ site.title }} </h5>
-        <p class="grey-text text-lighten-4"> {{ site.description }} </p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-    © 2014 Copyright {{ site.name }} | All rights reserved.
-    </div>
+    
   </div>
 </footer>
  

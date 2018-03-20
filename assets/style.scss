@@ -1,68 +1,30 @@
 ---
 ---
 
-@charset "UTF-8";
-
-// Colors
-@import "color";
-
-// Variables;
-@import "variables";
-
-// Reset
-@import "normalize";
-
-// components
-@import "global";
-@import "badges";
-@import "icons-material-design";
-@import "grid";
-@import "navbar";
-@import "roboto";
-@import "typography";
-@import "transitions";
-@import "cards";
-@import "toast";
-@import "tabs";
-@import "tooltip";
-@import "buttons";
-@import "dropdown";
-@import "waves";
-@import "modal";
-@import "collapsible";
-@import "chips";
-@import "materialbox";
-@import "forms/forms";
-@import "table_of_contents";
-@import "sideNav";
-@import "preloader";
-@import "slider";
-@import "carousel";
-@import "tapTarget";
-@import "pulse";
-@import "date_picker/default";
-@import "date_picker/default.date";
-@import "date_picker/default.time";
+@import "utilities/_all";
+@import "base/_all";
+@import "elements/_all";
+@import "components/_all";
+@import "grid/_all";
+@import "layout/_all";
 
 #main-nav{
-    height: auto;
     opacity: .8;
-    position: fixed;
-    top: 0;
-    z-index: 1;
 }
-
+/* 
 nav#main-nav ul {
     text-align: center;
     height: auto;
     line-height: 2.5em;
 }
-#desktop-nav li {
+nav#main-nav ul li {
     display: inline;
     float: none;
 }
-#desktop-nav li a {
+nav#main-nav ul li a {
     display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 nav#main-nav .brand-logo{
@@ -79,7 +41,7 @@ nav#main-nav .brand-logo{
 }
 
 #splash-vid video{
-    max-width: 100%;
+    width: 100%;
 }
 div.hero{
     position: relative;
@@ -105,4 +67,4 @@ div.slogan h1{
 
 #mobile-nav{
     display: hidden;
-}
+} */
