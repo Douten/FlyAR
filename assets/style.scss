@@ -8,28 +8,58 @@
 @import "grid/_all";
 @import "layout/_all";
 
+
+@font-face {
+    font-family: "Product Sans";
+    src: url('{{ "/assets/fonts/product-sans/Product Sans Regular.ttf" | relative_url }}');
+}
+@font-face {
+    font-family: "Product Sans";
+    src: url('{{ "/assets/fonts/product-sans/Product Sans Bold.ttf" | relative_url }}');
+    font-weight: bold;
+}
+
+
 .sharpen{
-    image-rendering: -moz-crisp-edges;         /* Firefox */
-    image-rendering:   -o-crisp-edges;         /* Opera */
-    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+    //image-rendering: -moz-crisp-edges;         /* Firefox */
+    //image-rendering:   -o-crisp-edges;         /* Opera */
+    //image-rendering: crisp-edges;
+    //-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+.flex-center{
+    justify-content: center;
 }
 
 #main-nav{
     background-color: rgba(0,0,0, .8);
+    font-family: "Product Sans";
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-size: .8rem;
 }
 
 #main-nav.navbar > .container{
     display: initial;
 }
 
-#main-nav.navbar .flex-center{
-    justify-content: center;
+#main-nav.navbar > .container .navbar-brand{
+    margin-left: 0;
+
 }
 
-#main-nav .navbar-brand{
-    justify-content: center;
+#main-nav .navbar-brand > .navbar-item{
+    order: 2;
+}
+
+#main-nav .navbar-brand > .navbar-item img{
+    max-height: 2.25rem;
+}
+
+#main-nav .navbar-brand > .navbar-burger{
+    order: 1;
+    margin-left: initial;
 }
 
 #main-nav .navbar-start{
