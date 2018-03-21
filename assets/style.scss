@@ -8,9 +8,34 @@
 @import "grid/_all";
 @import "layout/_all";
 
-#main-nav{
-    opacity: .8;
+.sharpen{
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
+
+#main-nav{
+    background-color: rgba(0,0,0, .8);
+}
+
+#main-nav.navbar > .container{
+    display: initial;
+}
+
+#main-nav.navbar .flex-center{
+    justify-content: center;
+}
+
+#main-nav .navbar-brand{
+    justify-content: center;
+}
+
+#main-nav .navbar-start{
+    width: 100%;
+}
+
 /* 
 nav#main-nav ul {
     text-align: center;
@@ -39,13 +64,16 @@ nav#main-nav .brand-logo{
     height: 60px;
     width: 151px;
 }
+*/
+
+#splash-vid{
+    position: relative;
+}
 
 #splash-vid video{
     width: 100%;
 }
-div.hero{
-    position: relative;
-}
+
 div.slogan{
     top: 0;
     left: 0;
@@ -64,7 +92,3 @@ div.slogan h1{
     font-size: 7vw;
     font-weight: 800;
 }
-
-#mobile-nav{
-    display: hidden;
-} */
