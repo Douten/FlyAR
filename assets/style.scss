@@ -124,27 +124,69 @@ nav#main-nav .brand-logo{
 
 #splash-vid{
     position: relative;
+    line-height: 0;
 }
 
 #splash-vid video{
     width: 100%;
+    line-height: 0;
 }
 
 div.slogan{
-    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    z-index: 4;
 }
+.overlay{
+    background-color: rgba(0,0,0, .15);
+    position: absolute;
+    z-index: 3;
+    line-height: 0;
+    height: 100%;
+    width: 100%;
+}
+
 div.slogan h1{
+    font-family: 'Source Sans Pro';
     text-align: center;
-    width: 65%;
+    width: 100%;
     color: #fff;
-    font-size: 7vw;
-    font-weight: 800;
+    font-size: 6vw;
+    font-weight: 900;
+    position: relative;
+}
+
+#product .hero-body{
+    display: flex;
+    position: relative;
+    top: -2rem;
+    z-index: 5;
+}
+
+#home-page #product img{
+    width: 40%;
+    height: 40%;
+}
+#home-page #product h2{
+    font: 200 4vw 'Source Sans Pro';
+    padding-top: 10%;
+}
+
+.city{
+    background-color: #0c1327;
+}
+
+.city .hero-body{
+    display: flex;
+}
+
+.city img{
+    width: 30%;
+    align-self: center;
 }
