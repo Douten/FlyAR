@@ -66,6 +66,32 @@
     width: 100%;
 }
 
+#main-nav .navbar-menu{
+    display: block;
+    position: fixed;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, .8);
+    transition: opacity .5s ease;
+}
+
+#main-nav .is-active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+#main-nav a:hover{
+    background-color: inherit;
+}
+
+#main-nav.navbar.is-dark a{
+    color: #ADADAD;
+}
+#main-nav.navbar.is-dark a:hover{
+    color: #FFF;
+}
+
 /* 
 nav#main-nav ul {
     text-align: center;
