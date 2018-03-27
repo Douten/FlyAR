@@ -162,19 +162,26 @@ div.slogan h1{
     position: relative;
 }
 
-#product .hero-body{
-    display: flex;
+#product .columns{
     margin: 5rem 0;
     align-items: center;
 }
 
+
+#product .columns .column{
+    text-align: center;
+}
+
 #home-page #product img{
-    width: 60%;
-    height: 60%;
+    //width: 60%;
+    //height: 60%;
 }
 #home-page #product h2{
-    font: 200 4vw 'Source Sans Pro';
+    font: 200 3.5vw 'Source Sans Pro';
+    line-height: 4vw;
+    text-align: left;
 }
+
 
 .city{
     background-color: #0c1327;
@@ -187,9 +194,12 @@ div.slogan h1{
 
 .city .hero h3{
     text-align: center;
-    font: 200 4vw 'Source Sans Pro';
+    font: 800 4vw 'Source Sans Pro';
     color: #fff;
     margin-top: 1rem;
+    bottom: 30px;
+    position: absolute;
+    left: 70px;
 }
 
 .city .columns{
@@ -198,9 +208,33 @@ div.slogan h1{
 
 .city .columns .column{
     text-align: center;
+    position: relative;
 }
 
 .city img{
     width: 90%;
     //align-self: center;
+}
+
+@include mobile{
+
+    #product .columns{
+        margin-bottom: 3rem;
+    }
+
+    #home-page #product h2{
+        font-size: 9vw;
+        text-align: center;
+        line-height: 10.5vw;
+    }
+
+    .city .hero h3{
+        text-align: center;
+        font: 800 6vw 'Source Sans Pro';
+        color: #fff;
+        margin-top: 1rem;
+        bottom: 30px;
+        position: absolute;
+        left: 70px;
+    }
 }
