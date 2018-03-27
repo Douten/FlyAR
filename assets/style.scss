@@ -164,29 +164,43 @@ div.slogan h1{
 
 #product .hero-body{
     display: flex;
-    position: relative;
-    top: -2rem;
-    z-index: 5;
+    margin: 5rem 0;
+    align-items: center;
 }
 
 #home-page #product img{
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
 }
 #home-page #product h2{
     font: 200 4vw 'Source Sans Pro';
-    padding-top: 10%;
 }
 
 .city{
     background-color: #0c1327;
+    padding: 4rem 0;
 }
 
 .city .hero-body{
-    display: flex;
+    //display: flex;
+}
+
+.city .hero h3{
+    text-align: center;
+    font: 200 4vw 'Source Sans Pro';
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.city .columns{
+    align-items: baseline;
+}
+
+.city .columns .column{
+    text-align: center;
 }
 
 .city img{
-    width: 30%;
-    align-self: center;
+    width: 90%;
+    //align-self: center;
 }
