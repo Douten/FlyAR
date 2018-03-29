@@ -152,6 +152,10 @@ div.slogan{
     width: 100%;
 }
 
+.about-us .overlay{
+    background-color: rgba(0,0,0, .2);
+}
+
 div.slogan h1{
     font-family: 'Source Sans Pro';
     text-align: center;
@@ -237,4 +241,21 @@ div.slogan h1{
         position: absolute;
         left: 70px;
     }
+
+    .about-us div.slogan{
+        left: initial;
+        right: initial;
+        height: auto;
+        position: initial;
+        padding: 100px 20px 20px 20px
+    }
+
+    .about-us .title{
+        color: #363636;
+        font-size: 9vw;
+    }
+}
+
+#about-us{
+    margin: 1.5rem 0;
 }
