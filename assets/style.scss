@@ -220,6 +220,31 @@ div.slogan h1{
     //align-self: center;
 }
 
+#about-us{
+    margin: 1.5rem 0;
+}
+
+.company-info{
+    font: 200 3vw 'Source Sans Pro';
+    line-height: 4.5vw;
+    margin-bottom: 2rem;
+}  
+
+#map{
+    width: 100%;
+    height: 800px;
+}
+
+.company-info p{
+    margin-bottom: .6rem;
+}
+
+.company-info .logo{
+    width: 50%;
+    margin: 2rem auto;
+    display: block;
+}
+
 @include mobile{
 
     #product .columns{
@@ -254,8 +279,21 @@ div.slogan h1{
         color: #363636;
         font-size: 9vw;
     }
-}
 
-#about-us{
-    margin: 1.5rem 0;
+    .company-info{
+        font: 200 5vw 'Source Sans Pro';
+        line-height: 8vw;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    } 
+
+    .company-info p{
+        margin-bottom: .6rem;
+    }
+    
+    .company-info .logo{
+        width: 50%;
+        margin: 4rem auto 2rem auto;
+        display: block;
+    }
 }

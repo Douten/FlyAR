@@ -1,0 +1,38 @@
+---
+layout: home
+title: Location
+permalink: /location/
+---
+<section class="hero about-us is-hidden-mobile">
+	<div class="hero-body is-paddingless">		
+		<div id="splash-vid">
+			<div class="slogan">
+				<h1 class="title slogan">
+					Places we're servicing.
+				</h1>
+			</div>
+			<div class="is-hidden-mobile">
+					<div id="map"></div>
+				<!-- <img src="{{ "/assets/img/location-header.jpg" | relative_url }}"> -->
+			</div>
+		</div>
+	</div>
+</section>
+<h2 class="title is-1">Orlando | Chicago</h2>
+
+<script>
+	function initMap() {
+		var uluru = {lat: -25.363, lng: 131.044};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 4,
+			center: uluru
+		});
+		var marker = new google.maps.Marker({
+			position: uluru,
+			map: map
+		});
+	}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5atvDENCJUNG_lfixpPl38vi5V5kUpTg&callback=initMap">
+</script>
