@@ -38,6 +38,7 @@
     letter-spacing: 0.8px;
     text-transform: uppercase;
     font-size: .8rem;
+    transition: all 0.5s;
 }
 
 #main-nav.navbar > .container{
@@ -72,13 +73,16 @@
     top: 52px;
     left: 0;
     width: 100%;
+    opacity: 0;
+    max-height:0;
+    overflow: hidden;
     background-color: rgba(0,0,0, .8);
-    transition: opacity .5s ease;
+    transition: all .75s ease;
 }
 
 #main-nav .is-active{
     opacity: 1;
-    pointer-events: all;
+    max-height: 200px;
 }
 
 #main-nav a:hover{
@@ -90,6 +94,11 @@
 }
 #main-nav.navbar.is-dark a:hover{
     color: #FFF;
+}
+
+#main-nav.scrollUp{
+    transform: translateY(-90px);
+    opacity: 0;
 }
 
 /* 
@@ -240,7 +249,7 @@ div.slogan h1{
 }
 
 .company-info .logo{
-    width: 50%;
+    width: 35%;
     margin: 2rem auto;
     display: block;
 }
