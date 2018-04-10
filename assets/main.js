@@ -38,13 +38,20 @@ $(document).ready(function () {
       var b = navbar.height();
      
       currentScrollTop = a;
-     
+
+      if (a > b + b + b){
+        navbar.removeClass("isTop");
+      } else if (a <= b){
+        navbar.addClass("isTop");
+      }
+
       if (c < currentScrollTop && a > b + b) {
         navbar.addClass("scrollUp");
       } else if (c > currentScrollTop && !(a <= b)) {
         navbar.removeClass("scrollUp");
       }
       c = currentScrollTop;
+      
   });
   
 });
