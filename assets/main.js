@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 $(document).ready(function () {
   
-  console.log("running");
-
   'use strict';
   
    var c, currentScrollTop = 0,

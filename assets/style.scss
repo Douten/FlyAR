@@ -31,6 +31,7 @@
     justify-content: center;
 }
 
+
 #main-nav{
     background-color: rgba(0,0,0, .8);
     font-family: "Product Sans";
@@ -41,13 +42,17 @@
     transition: all 0.5s;
 }
 
-#main-nav.navbar > .container{
-    display: initial;
+#main-nav.navbar{
+    .container { display: initial; }
+    .container .navbar-brand{
+        margin-left: 0;
+    }
 }
+
+
 
 #main-nav.navbar > .container .navbar-brand{
     margin-left: 0;
-
 }
 
 #main-nav .navbar-brand > .navbar-item{
