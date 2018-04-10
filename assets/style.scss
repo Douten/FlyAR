@@ -298,6 +298,14 @@ div.slogan h1{
         opacity: 1;
         max-height: 160px;
     }
+
+    #main-nav .navbar-brand .navbar-item{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-grow: 1;
+        position: absolute;
+    }
 }
 
 @include mobile{
