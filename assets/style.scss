@@ -81,7 +81,7 @@
 }
 
 #main-nav .navbar-menu{
-    transition: all .75s ease;
+    transition: all .75s ease, background-color 1ms;
     margin-right: 0;
     flex-grow: 0;
 }
@@ -284,6 +284,7 @@ div.slogan h1{
         display: block;
         position: fixed;
         top: 52px;
+        padding: 0;
         left: 0;
         width: 100%;
         opacity: 0;
@@ -295,6 +296,7 @@ div.slogan h1{
     #main-nav .navbar-menu.is-active{
         opacity: 1;
         max-height: 160px;
+        padding: .5rem 0;
     }
 
     #main-nav .navbar-brand .navbar-item{
