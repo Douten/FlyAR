@@ -35,20 +35,18 @@
 #main-nav{
     background-color: rgba(0,0,0, .8);
     font-family: "Product Sans";
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 0.8px;
     text-transform: uppercase;
     font-size: .8rem;
-    transition: all 0.5s;
 }
 
 #main-nav.navbar{
-    .container { display: initial; }
+    .container { justify-content: center; }
     .container .navbar-brand{
         margin-left: 0;
     }
 }
-
 
 
 #main-nav.navbar > .container .navbar-brand{
@@ -68,21 +66,10 @@
     margin-left: initial;
 }
 
-#main-nav .navbar-start{
-    width: 100%;
-}
-
 #main-nav .navbar-menu{
-    display: block;
-    position: fixed;
-    top: 52px;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    max-height:0;
-    overflow: hidden;
-    background-color: rgba(0,0,0, .8);
-    transition: all .75s ease;
+    transition: max-height .75s ease;
+    margin-right: 0;
+    flex-grow: 0;
 }
 
 #main-nav .is-active{
@@ -257,6 +244,25 @@ div.slogan h1{
     width: 35%;
     margin: 2rem auto;
     display: block;
+}
+
+@include touch{
+    #main-nav .navbar-menu{
+        display: block;
+        position: fixed;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        max-height:0;
+        overflow: hidden;
+        background-color: rgba(0,0,0, .8);
+    }
+
+    #main-nav .navbar-menu.is-active{
+        opacity: 1;
+        max-height: 160px;
+    }
 }
 
 @include mobile{
