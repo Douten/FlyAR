@@ -48,11 +48,11 @@
 
 #main-nav.home-page.navbar.is-dark.isTop a{
     color: #fff;
-    font-size: 1rem;
+    opacity: .8;
 }
 
 #main-nav.home-page.navbar.is-dark.isTop a:hover{
-    font-weight: bold;
+    opacity: 1;
 }
 
 #main-nav.navbar{
@@ -195,10 +195,17 @@ div.slogan h1{
     //width: 60%;
     //height: 60%;
 }
-#home-page #product h2{
-    font: 200 3.5vw 'Source Sans Pro';
-    line-height: 4vw;
-    text-align: left;
+#home-page #product {
+    h1{
+        font-weight: 100;
+        font-size: 3.5rem;
+    }
+    h2{
+        font-weight: normal;
+        margin: 1.5rem 0 .5rem 0;
+        font-family: "Product Sans";
+        color: #000;
+    }
 }
 
 
