@@ -230,7 +230,7 @@ a.button.addcity{
         h1{
             font-weight: 100;
             margin: 3rem 0;
-            font-size: 80px;
+            font-size: 6vw;
         }
         h2{
             font-weight: normal;
@@ -249,7 +249,15 @@ a.button.addcity{
     }
 
     section.experience{
-        margin-top: 2rem;
+        margin-top: 4rem;
+    }
+}
+
+@include widescreen{
+    .headset{
+        width: 80%;
+        height: 80%;
+        margin: auto;
     }
 }
 
@@ -348,7 +356,12 @@ a.button.addcity{
         position: absolute;
     }
 
+}
+
+@include mobile{
+
     .headset-tagline, .cities{
+        padding-bottom: .5rem; 
         h1{ 
             line-height: 2.5rem;
             font-size: 2rem !important;
@@ -360,12 +373,17 @@ a.button.addcity{
         }
     }
 
-}
-
-@include mobile{
-
     #product .columns{
         margin-bottom: 3rem;
+    }
+
+    #home-page .product h1{
+        margin-top: 6rem;
+    }
+
+    
+    #home-page .product h1{
+        font-size: 3.5rem !important;
     }
 
     #home-page #product h2{
