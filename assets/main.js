@@ -51,6 +51,10 @@ $(document).ready(function () {
         navbar.removeClass("scrollUp");
       }
       c = currentScrollTop;
+
+      if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        navbar.removeClass("scrollUp");
+      }
       
   });
   

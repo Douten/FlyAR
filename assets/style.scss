@@ -181,7 +181,7 @@ div.slogan h1{
     position: relative;
 }
 
-.headset-tagline{
+.headset-tagline, .cities{
     .container{
         max-width: 960px;
     }
@@ -210,9 +210,13 @@ div.slogan h1{
     }
 }
 
+.cities img{
+    width: 100%;
+}
+
 #home-page{
 
-    .product {
+    .product, .experience {
 
         h1{
             font-weight: 100;
@@ -312,6 +316,19 @@ div.slogan h1{
         flex-grow: 1;
         position: absolute;
     }
+
+    .headset-tagline, .cities{
+        h1{ 
+            line-height: 2.5rem;
+            font-size: 2rem !important;
+            color: #000;
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: 100;
+        }
+    }
+
 }
 
 @include mobile{

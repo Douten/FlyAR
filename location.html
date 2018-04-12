@@ -3,36 +3,56 @@ layout: page
 title: Location
 permalink: /location/
 ---
-<section class="hero about-us is-hidden-mobile">
+<section class="hero">
 	<div class="hero-body is-paddingless">		
-		<div id="splash-vid">
-			<div class="slogan">
-				<h1 class="title slogan">
-					Places we're servicing.
-				</h1>
+		<img src="{{ "/assets/img/felipe-p-lima-rizo-404796-unsplash.jpg" | relative_url }}">
+	</div>
+</section>
+
+<div class="section headset-tagline">
+	<div class="container">
+		<div class="columns">
+			<div class="column">
+				<h1 class="is-size-1">Is your city on the list?</h1>
+				<p>
+					See your city from the sky through AR eyes. Gaze down at the famous theme parks and skyscrapper on an experience tailored for you. With a range of helicopter flight options to suit all time schedules and budgets, you just need to sit back and enjoy the ride. We currently serve Orlando and Chicago.
+
+				</p>
 			</div>
-			<div class="is-hidden-mobile">
-					<div id="map"></div>
-				<!-- <img src="{{ "/assets/img/location-header.jpg" | relative_url }}"> -->
+		</div>
+	</div>
+</div>
+
+<section class="hero cities">
+	<div class="columns">
+		<div class="column is-paddingless">
+			<img src="{{ "/assets/img/city-orlando.png" | relative_url }}">
+			<div class="hero">
+				<div class="hero-body">
+					<div class="container">
+						<h1 class="is-size-1">The city beautiful</h1>
+						<p>
+							As one of the world's most visited tourist destinations, Orlando's famous attractions form the backbone of its tourism industry. the two most significant of these attractions are Walt Disney World, opened by the Walt Disney Company in 1971, and located approximately 21 miles (34 km) southwest of Downtown Orlando in Bay Lake; and the Universal Orlando Resort, opened in 1999 as a major expansion of Universal Studios Florida.						</p>
+					</div>
+				</div>		
 			</div>
 		</div>
 	</div>
 </section>
-<h2 class="title is-1">Orlando | Chicago</h2>
 
-<script>
-	function initMap() {
-		var uluru = {lat: -25.363, lng: 131.044};
-		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 4,
-			center: uluru
-		});
-		var marker = new google.maps.Marker({
-			position: uluru,
-			map: map
-		});
-	}
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5atvDENCJUNG_lfixpPl38vi5V5kUpTg&callback=initMap">
-</script>
+<section class="hero cities">
+		<div class="columns">
+			<div class="column is-paddingless">
+				<img src="{{ "/assets/img/city-chicago.png" | relative_url }}">
+				<div class="hero">
+					<div class="hero-body">
+						<div class="container">
+							<h1 class="is-size-1">The windy city</h1>
+							<p>
+								Positioned along Lake Michigan, Chicago is an international hub for finance, commerce, industry, technology, telecommunications, and transportation. O'Hare International Airport is the second-busiest airport in the world when measured by aircraft traffic; the region also has the largest number of U.S. highways and railroad freight.							</p>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</section>
