@@ -181,6 +181,10 @@ div.slogan h1{
     position: relative;
 }
 
+.headset-tagline.section{
+    //adding-top: 0;
+}
+
 .headset-tagline, .cities{
     .container{
         max-width: 960px;
@@ -206,12 +210,17 @@ div.slogan h1{
         text-align: center;
     }
     img{
-        width: 80%;
+        width: 70%;
     }
 }
 
 .cities img{
     width: 100%;
+    margin-top: 3rem;
+}
+
+a.button.addcity{
+    margin-top: 1.25rem;
 }
 
 #home-page{
@@ -240,19 +249,40 @@ div.slogan h1{
     }
 
     .columns:last-child{
-        margin-top: 2rem;
     }
 }
 
 
 #about-us{
-    margin: 1.5rem 0;
+    margin: 0 0 1.5rem 0;
+}
+
+#about-us {
+    margin: 0 0 1.5rem 0;
+    .column{
+        margin-top: 0;
+    }
+    .columns, .card{
+        height: 100%;
+    }
+    .card{
+        height: 100%;
+    }
+}
+
+.section.about{
+    padding-bottom: 0;
+}
+
+.section.contact{
+    padding-top: 2rem;
 }
 
 .company-info{
     font: 200 3vw 'Source Sans Pro';
     line-height: 4.5vw;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }  
 
 #map{
